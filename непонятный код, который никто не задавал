@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int sum = 0;
+    int sum1 = 0;
+    int sum2 = 0;
+    int i = 0;
+    for(int i = 1; i <= 10; i++){
+            printf("%d \n", i);
+            sum = sum + i;
+            if(i % 2 == 0){
+                sum1 = sum1 + i;
+            }
+            if(i % 2 != 0){
+                sum2 = sum2 + i;
+            }
+
+     //   sum = sum + i;
+      //  printf("%d \n", i);
+     //  printf("  %d\n", sum);
+    }
+    printf("sum1 = %d\n", sum1);
+    printf("sum2 = %d\n", sum2);
+    printf("sum = %d\n", sum);
+    return 0;
+}
