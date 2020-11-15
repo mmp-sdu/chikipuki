@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+       //printf("1");
+    int i;
+    char *a = "+";
+    char *b = "-";
+    char *c = "=";
+    char prob[100] = "";
+    char prob2[100] = "";
+    char prob3[100] = "";
+    for(int i = 1; i <=20; i++){
+        strcat(prob, a );
+        strcat(prob2, b );
+        strcat(prob3, c );
+        //   if(i % 5 == 0){
+      //    prob[0] = 0;
+        //  prob2[0] = 0;
+          //  printf("7");
+       // }
+
+            if( i % 2 == 0){
+                 printf("%s%d", prob2, i);
+            }
+            if( i % 2 != 0 & i % 3 != 0){
+                 printf("%s%d", prob, i);
+            }
+            if( i % 3 == 0 & i % 2 != 0){
+                printf("%s%d", prob3, i);
+            }
+
+      //printf("%s", prob);
+      // printf("%d", i);
+
+
+        //  printf("%s%d", prob, i);
+        if(i % 5 == 0){
+          prob[0] = 0;
+          prob2[0] = 0;
+          prob3[0] = 0;
+           //printf("7");
+        }
+
+//printf("%s", prob);
+   printf("\n");
+    }
+  //printf("%s", prob);
+ // printf("\n");
+    return 0;
+}
