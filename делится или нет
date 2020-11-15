@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a, b, r;
+    printf("Enter 2 numbers: ");
+    scanf("%d %d", &a, &b);
+    r = a % b;
+    if(r == 0){
+        printf("%d divided by %d", a, b);
+    }
+    else{
+        printf("%d not divided by %d", a, b);
+    }
+    return 0;
+}
+
