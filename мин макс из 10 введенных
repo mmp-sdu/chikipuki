@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i = 0;
+    int a = 0;
+    int min = 0;
+    int max = 0;
+    for(int i = 1; i <= 10; i++){
+            printf("%d enter integer: ", i);
+            scanf("%d", &a);
+        if(i == 1){
+            min = a;
+        }
+        if(a < min){
+            min = a;
+        }
+        if(a > max){
+            max = a;
+        }
+    }
+    printf("max = %d\nmin = %d\n", max, min);
+    return 0;
+}
